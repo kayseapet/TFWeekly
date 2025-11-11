@@ -1,0 +1,47 @@
+from collections import deque 
+
+# Tree Node class
+class TreeNode:
+    def __init__(self, value, left=None, right=None):
+        self.val = value
+        self.left = left
+        self.right = right
+
+def print_tree(root):
+    if not root:
+        return "Empty"
+    result = []
+    queue = deque([root])
+    while queue:
+        node = queue.popleft()
+        if node:
+            result.append(node.val)
+            queue.append(node.left)
+            queue.append(node.right)
+        else:
+            result.append(None)
+    while result and result[-1] is None:
+        result.pop()
+    print(result)
+
+
+def calculate_yield(root):
+    if root.val == "+":
+        return root.left.val + root.right.val
+    elif root.val == "-":
+        return root.left.val - root.right.val
+    elif root.val == "*":
+        return root.left.val * root.right.val
+    elif root.val == "/":
+        return root.left.val / root.right.val
+"""
+      +
+    /   \
+    *       -
+   /  \    /   \
+   10   0 2     5
+"""
+#(10*0)+(2-5)
+tree2 = TreeNode("+", TreeNode("*",TreeNode(10),TreeNode(0)), TreeNode("-",TreeNode(2),TreeNode(5)))
+
+print_tree(tree2)
