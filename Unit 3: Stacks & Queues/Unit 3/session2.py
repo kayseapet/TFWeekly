@@ -1,6 +1,7 @@
 # Unit 3 Session 2 Version 1
 
-#PROBLEM 1: Manage Performance Stage Changes
+#PROBLEM 1: Manage Performance Stage Changes  
+# Why this problem: This problem challenges students to keep track of the state of multiple schedules.
 ### U - Understand 
 '''
 1. Share 2 questions you would ask to help understand the question:
@@ -59,12 +60,13 @@ print(manage_stage_changes(["Schedule X", "Schedule Y", "Cancel", "Cancel", "Sch
 
 
 
-#PROBLEM 3: Collecting Points at Festival Booths
+#PROBLEM 3: Collecting Points at Festival Booths 
+# Why this problem: This problem is using the stack as an accumulator, which can be helpful for technical situations were you may need a history of the numbers as they were added.
 ### U - Understand 
 '''
 1. Share 2 questions you would ask to help understand the question:
     1. What is the purpose of using a stack rather than the sum() method?
-    2. Should the stack add the point as it gets them, or add the all at the end?
+    2. Should the stack add the points as it gets them, or add the all at the end?
 '''
 ### P - Plan
 '''
@@ -103,7 +105,8 @@ print(collect_festival_points([1, 5, 9, 2, 8]))
 
 
 
-#PROBLEM 5: Merge Performance Schedules
+#PROBLEM 5: Merge Performance Schedules 
+# Why This Problem: This is sort of like a merge sort without the sorting part.
 ### U - Understand 
 '''
 1. Share 2 questions you would ask to help understand the question:
