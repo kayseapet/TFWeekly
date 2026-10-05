@@ -1,6 +1,7 @@
 # Unit 4 Session 2 Version 1
 
 #PROBLEM 1: Planning Your Daily Work Schedule
+# Why this problem: This is a problem that has multiple solutions, and students will need to consider optimization.
 ### U - Understand 
 '''
 1. Share 2 questions you would ask to help understand the question:
@@ -47,6 +48,7 @@ print(find_task_pair(task_times_3, available_time))
 
 
 #Problem 3: Expense Tracking and Categorization
+# Why this problem: This problem is about populating a dict with values from a collection of tuples, and students may be unfamiliar on how to deal with tuples.
 ### U - Understand 
 '''
 1. Share 2 questions you would ask to help understand the question:
@@ -102,6 +104,7 @@ print(calculate_expenses(expenses_3))
 
 
 #Problem 5: Validating HTML Tags
+# Why this problem: Students may have an issue with string parsing, being able to seperate the tags and compare them to see if they're matches or not.
 ### U - Understand 
 '''
 1. Share 2 questions you would ask to help understand the question:
