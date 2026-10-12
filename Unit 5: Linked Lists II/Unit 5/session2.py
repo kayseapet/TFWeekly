@@ -14,6 +14,7 @@ def print_linked_list(head):
 #  ----------------------------------------------------------------
 
 #Problem 1: Mutual Friends
+# Why this problem:This problem could be difficult for students still struggling with knowing how to access & interact with a class instance's attributes.
 ### U - Understand 
 '''
 1. Share 2 questions you would ask to help understand the question:
@@ -69,6 +70,7 @@ print(bob.get_mutuals(ankha))           # expecting: []
 
 
 #Problem 3: Daily Tasks
+# Why this problem: this problem is about traversing an entire linked list, which can only be done with a while loop rather a for-loop.
 ### U - Understand 
 '''
 1. Share 2 questions you would ask to help understand the question:
@@ -106,6 +108,8 @@ print_linked_list(add_first(task_1, "check turnip prices"))               # expe
 
 
 #Problem 5: Remove Last
+# Why this problem:This problem is about knowing how to redefine the 'next' attribute for a node.
+### U - Understand
 '''
 1. Share 2 questions you would ask to help understand the question:
     1. What does the function return if there is no nodes at 'head'?
