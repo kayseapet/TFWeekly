@@ -59,7 +59,7 @@ print(is_circular(clue1)) # expect: True
 # -----------------------------------------------------------------------------------------------
 
 #Problem 3: Prioritizing Suspects
-# Why this problem:
+# Why this problem: This problem is about pointer manipulation, and will test students' understanding of use how to use dummy nodes.
 ### U - Understand 
 '''
 1. Share 2 questions you would ask to help understand the question:
@@ -112,7 +112,7 @@ print_linked_list(partition(suspect_ratings, 3))
 # -------------------------------------------------------------------------------------------------
 
 #Problem 5: A New Perspective
-# Why this problem:
+# Why this problem: This problem could confuse students, because they may not know that its more about linkinght start and end nodes and not necessarily shifting ALL the values in the linked list.
 ### U - Understand 
 '''
 1. Share 2 questions you would ask to help understand the question:
