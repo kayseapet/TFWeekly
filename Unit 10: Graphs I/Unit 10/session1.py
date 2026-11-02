@@ -1,44 +1,7 @@
 #Unit 10 Session 1, Standard Version 1
 
-#Problem 1: Graphing Flights
-### U - Understand 
-'''
-1. Share 2 questions you would ask to help understand the question:
-    1. what type of varaible should it be?
-    2. How do we store each vertice connection?
-
-'''
-### P - Plan
-'''
-2. Write out in plain English what you want to do: 
-    - Write a dict that, for each airport, has a list of the connected flights
-        - Using the example usage to know what keys and values are needed
-
-3. Translate each sub-problem into pseudocode:
-    flights = {'JFK': ['LAX','DFW'], 'LAX':['JFK'], 'DFW': ['ATL', 'JFK'], 'ATL': ['DFW']}
-'''
-### I - Implement
-'''
-4. Translate the pseudocode into Python and share your final answer:
-'''
-flights = {'JFK': ['LAX','DFW'], 
-           'LAX':['JFK'], 
-           'DFW': ['ATL', 'JFK'], 
-           'ATL': ['DFW']}
-
-#Problem 1 Examples:
-print("Problem 1 Output:")            # expecting: ( add this line to print statements)
-print(list(flights.keys()))
-print(list(flights.values()))
-print(flights["JFK"])
-
-
-
-
-
-
-
 #Problem 2: There and Back
+# Why this problem:
 ### U - Understand 
 '''
 1. Share 2 questions you would ask to help understand the question:
@@ -97,12 +60,10 @@ flights1 = [[1, 2], [0], [0, 3], [2]]
 flights2 = [[1, 2], [], [0], [2]]
 print(bidirectional_flights(flights1))
 print(bidirectional_flights(flights2))
-
-
-
-
+# -------------------------------------------------------------------------------------------------
 
 #Problem 3: Finding Direct Flights
+# Why this problem:
 ### U - Understand 
 '''
 1. Share 2 questions you would ask to help understand the question:
@@ -146,13 +107,10 @@ flights = [
             [0, 0, 0, 0]]
 print(get_direct_flights(flights, 2))
 print(get_direct_flights(flights, 3))
-
-
-
-
-
+# -------------------------------------------------------------------------------------------------
 
 #Problem 4: Converting Flight Representations
+# Why this problem:
 ### U - Understand 
 '''
 1. Share 2 questions you would ask to help understand the question:
@@ -193,55 +151,4 @@ print("Problem 4 Output:")            # expecting: ( add this line to print stat
 flights = [['Cape Town', 'Addis Ababa'], ['Cairo', 'Lagos'], ['Lagos', 'Addis Ababa'], 
             ['Nairobi', 'Cairo'], ['Cairo', 'Cape Town']]
 print(get_adj_dict(flights))
-
-
-
-
-
-#Problem 5: Find Center of Airport 
-### U - Understand 
-'''
-1. Share 2 questions you would ask to help understand the question:
-    1. how do we know how many terminals there are in total?
-    2. Can we use a list to solve thos problem, or do we have to use a dict?
-'''
-### P - Plan
-'''
-2. Write out in plain English what you want to do: 
-    - make a dict where:
-        - every terminal starts at 0 
-        - each edge we have adds +1 to both of the terminals
-    - return the terminal with the most edges
-3. Translate each sub-problem into pseudocode:
-    dict = {}
-    for terminal in terminals:
-        if dict.get(terminal[0]) is None:
-            dict[terminal[0]] = 0
-        if dict.get(terminal[1]) is None:
-            dict[terminal[1]] = 0
-        dict[terminal[0]] += 1
-        dict[terminal[1]] += 1
-'''
-### I - Implement
-'''
-4. Translate the pseudocode into Python and share your final answer:
-'''
-def find_center(terminals):
-    dict = {}
-    for terminal in terminals:
-        if dict.get(terminal[0]) is None:
-            dict[terminal[0]] = 0
-        if dict.get(terminal[1]) is None:
-            dict[terminal[1]] = 0
-        dict[terminal[0]] += 1
-        dict[terminal[1]] += 1
-    return max(dict, key=dict.get)
-
-#Problem 5 Examples:
-print("Problem 5 Output:")            # expecting: ( add this line to print statements)
-terminals1 = [[1,2],[2,3],[4,2]]
-terminals2 = [[1,2],[5,1],[1,3],[1,4]]
-print(find_center(terminals1))
-print(find_center(terminals2))
-
-
+# -------------------------------------------------------------------------------------------------

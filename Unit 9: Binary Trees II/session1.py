@@ -1,16 +1,13 @@
-# Unit 9, Session 1: Standard Set Version 1
+# Unit 9, Standard Set Session 1 Version 1
 
 #-----------------------------------
 # For testing
 from collections import deque 
-
-
 class TreeNode:
     def __init__(self, value, left=None, right=None):
         self.val = value
         self.left = left
         self.right = right
-
 class Puff():
      def __init__(self, flavor, left=None, right=None):
         self.val = flavor
@@ -32,7 +29,6 @@ def print_tree(root):
     while result and result[-1] is None:
         result.pop()
     print(result)
-
 def build_tree(values):
   if not values:
       return None
