@@ -1,7 +1,7 @@
 #Unit 10, Session 2 Version 1
 
 #Problem 1: Can Rebook Flight
-# Why this problem:
+# Why this problem:using BFS or DFS for graphs rather than tree can be a learning curve for some students.
 ### U - Understand 
 '''
 1. Share 2 questions you would ask to help understand the question:
@@ -69,7 +69,7 @@ print(can_rebook(flights2, 0, 2))
 # -------------------------------------------------------------------------------------------------------------------------
 
 #Problem 2: Can Rebook Flight II
-# Why this problem:
+# Why this problem: a lot of students get confused on the difference between DFS and BFS, and what it specfically looks like in implementation.
 ### U - Understand 
 '''
 1. Share 2 questions you would ask to help understand the question:
@@ -131,7 +131,7 @@ print(can_rebook2(flights2, 0, 2))
 # -----------------------------------------------------------------------------------------------------------------------
 
 #Problem 3: Number of Flights
-# Why this problem:
+# Why this problem: this problem is harder to conceptualize; 
 ### U - Understand 
 '''
 1. Share 2 questions you would ask to help understand the question:

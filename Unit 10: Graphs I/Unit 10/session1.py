@@ -1,7 +1,7 @@
 #Unit 10 Session 1, Standard Version 1
 
 #Problem 2: There and Back
-# Why this problem:
+# Why this problem:this problem is about determining a path from start node to the target.
 ### U - Understand 
 '''
 1. Share 2 questions you would ask to help understand the question:
@@ -63,7 +63,7 @@ print(bidirectional_flights(flights2))
 # -------------------------------------------------------------------------------------------------
 
 #Problem 3: Finding Direct Flights
-# Why this problem:
+# Why this problem: its could be difficult to students, trying to make sure they reach every possible path without repeating them to reduce complexity.
 ### U - Understand 
 '''
 1. Share 2 questions you would ask to help understand the question:
@@ -110,7 +110,7 @@ print(get_direct_flights(flights, 3))
 # -------------------------------------------------------------------------------------------------
 
 #Problem 4: Converting Flight Representations
-# Why this problem:
+# Why this problem:this problem has an input on edges, which can confuse students on how to visualize/connect them as a graph.
 ### U - Understand 
 '''
 1. Share 2 questions you would ask to help understand the question:
